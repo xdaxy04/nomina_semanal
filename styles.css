@@ -1,0 +1,105 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== FONDO GENERAL ===== */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #14001f, #000000 75%);
+    color: #e0ccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor {
+    background: rgba(20, 0, 40, 0.85);
+    padding: 50px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 
+        0 0 25px #8a2be2,
+        0 0 60px rgba(138, 43, 226, 0.4);
+    backdrop-filter: blur(15px);
+}
+
+/* ===== TITULO FUTURISTA ===== */
+h2 {
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #c77dff, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 
+        0 0 10px #9d4edd,
+        0 0 20px #7b2cbf;
+}
+
+/* ===== FORMULARIO EN GRID ===== */
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+/* ===== LABELS ===== */
+label {
+    font-size: 14px;
+    color: #cdb4ff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d001a;
+    border: 1px solid #7b2cbf;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #c77dff;
+    box-shadow: 0 0 12px #c77dff;
+}
+
+/* ===== BOTON ===== */
+button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #7b2cbf, #c77dff);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 15px #c77dff,
+        0 0 30px #7b2cbf;
+}
+
+/* ===== RESULTADO ===== */
+#resultado {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(30, 0, 60, 0.7);
+    border: 1px solid #7b2cbf;
+    box-shadow: 0 0 20px rgba(123, 44, 191, 0.4);
+    font-size: 16px;
+}
